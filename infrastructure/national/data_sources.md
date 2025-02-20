@@ -1,5 +1,24 @@
 # Fonti Dati Infrastrutturali Nazionali
 
+## Edifici
+
+### Protezione Civile
+- **URL**:
+  - Nord-Est: `https://github.com/pcm-dpc/DPC-Aggregati-Strutturali-ITH-NordEst`
+  - Nord-Ovest: `https://github.com/pcm-dpc/DPC-Aggregati-Strutturali-ITC-NordOvest`
+  - Centro: `https://github.com/pcm-dpc/DPC-Aggregati-Strutturali-ITI-Centro`
+  - Sud: `https://github.com/pcm-dpc/DPC-Aggregati-Strutturali-ITF-Sud`
+  - Isole: `https://github.com/pcm-dpc/DPC-Aggregati-Strutturali-ITG-Isole`
+- **Dataset**: Dati vettoriali OSM per zona/regione/comune
+- **Licenza**:  Attribuzione 4.0 Internazionale
+- **Aggiornamento**: 2022
+- **Formati**: Shapefile
+
+### Microsoft ML Building Footprints
+- **URL**: `https://minedbuildings.z5.web.core.windows.net/global-buildings/dataset-links.csv`
+- **Aggiornamento**: Mensile (ma dataset globale)
+- **Formati**: csv
+
 ## Istituto Geografico Militare (IGM)
 
 ### Prodotti Cartografici

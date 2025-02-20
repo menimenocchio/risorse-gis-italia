@@ -16,9 +16,9 @@
 - **Copertura**: Per regione
 
 ### DIVA-GIS
-- **URL**: `https://diva-gis.org/datadown`
+- **URL**: `https://geodata.ucdavis.edu/programs/diva/diva75.zip`
 - **Dataset**: 
-  - Confini amministrativi regionali
+  - Confini amministrativi regionali (versione 7.5)
   - Uso del suolo regionale
   - Elevazione regionale
 - **Formato**: Shapefile
@@ -29,6 +29,7 @@
 - **Licenza**: ODbL
 - **Aggiornamento**: Giornaliero
 - **Formati**: Shapefile, GeoJSON, OSM XML
+
 
 ## Valutazione Fonti Regionali
 
