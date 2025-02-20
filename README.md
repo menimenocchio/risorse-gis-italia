@@ -1,142 +1,95 @@
-# GIS Italia - Documentazione Risorse Territoriali
+# GIS Italia - Catalogo Risorse Territoriali
 
-## Struttura Repository
+Repository contenente un catalogo strutturato di risorse GIS per l'Italia, organizzato per tipologia di dato e copertura territoriale.
+
+## 📂 Struttura Repository
+
 ```
 /gisitalia/
-├── administrative/       # Dati amministrativi
-│   ├── national/        # Fonti nazionali (ISTAT, etc)
-│   └── regional/        # Geoportali regionali
-├── demographic/         # Dati demografici
-│   └── census/         # Dati censimenti
-├── environmental/      # Dati ambientali
-└── infrastructure/     # Dati infrastrutture
+├── administrative/       # Confini amministrativi e dati catastali
+│   ├── national/        # ISTAT, ANNCSU, confini nazionali
+│   └── regional/        # Limiti amministrativi regionali
+├── demographic/         # Dati demografici e statistici
+│   ├── national/        # Censimenti nazionali, statistiche ISTAT
+│   └── regional/        # Statistiche regionali
+├── environmental/       # Dati ambientali
+│   ├── national/        # ISPRA, MASE, INGV
+│   └── regional/        # Autorità di bacino, dati regionali
+├── infrastructure/      # Infrastrutture e servizi
+│   ├── national/        # IGM, RFI, ANAS
+│   └── regional/        # Infrastrutture regionali
+└── topographic/        # Dati topografici e rilievi
+    ├── national/        # DTM nazionali, ortofoto
+    └── regional/        # LiDAR e DTM regionali
 ```
 
-## Standard Dataset
-Ogni risorsa deve includere:
-- **Fonte**: Organizzazione/Ente responsabile
-- **Affidabilità**: Bassa/Media/Alta
-- **Aggiornamento**: Frequenza
-- **Licenza**: Tipo licenza
-- **Formato**: Formati disponibili
-- **Sistema**: Sistema di riferimento
+## 🎯 Obiettivi
+- Fornire un punto di accesso unificato alle risorse GIS italiane
+- Documentare fonti dati ufficiali e loro caratteristiche
+- Facilitare l'accesso ai dati territoriali
+- Mantenere informazioni aggiornate su servizi e dataset
 
-## Convenzioni
-- File in formato Markdown
-- Nome file in minuscolo
-- Cartelle per categoria
-- README in ogni cartella
-- Collegamenti verificati
+## 📊 Categorie di Dati
 
-## Contribuire
-Vedere [CONTRIBUTING.md](CONTRIBUTING.md) per le linee guida.
+### Dati Amministrativi
+- Confini amministrativi (ISTAT)
+- Dati catastali (Agenzia Entrate)
+- Indirizzi e stradari (ANNCSU)
 
-## 🔍 Indice delle Risorse
+### Dati Demografici
+- Censimenti popolazione
+- Statistiche demografiche
+- Dati socio-economici
 
-### Fonti Nazionali Ufficiali
+### Dati Ambientali
+- Geologia e rischi naturali
+- Idrografia e bacini
+- Aree protette
+- Uso del suolo
 
-- **[ISTAT](./administrative/istat.md)**
-  - Confini amministrativi
-  - Dati demografici e censimenti
-  - [Affidabilità: Alta] [Aggiornamento: Annuale]
+### Infrastrutture
+- Cartografia IGM
+- Reti trasporto
+- Servizi e utilities
+- POI
 
-- **[Geoportale Nazionale](./infrastructure/geoportale.md)**
-  - Cartografia di base
-  - Ortofoto
-  - DTM e DSM nazionali
-  - [Affidabilità: Alta] [Aggiornamento: Variabile]
+### Dati Topografici
+- DTM e DSM
+- Ortofoto
+- LiDAR
+- Immagini satellitari
 
-- **[INGV](./environmental/ingv.md)**
-  - Dati sismici
-  - Dati vulcanologici
-  - [Affidabilità: Alta] [Aggiornamento: Continuo]
+## 🔍 Standard Documentazione
 
-- **[ISPRA](./environmental/ispra.md)**
-  - Geologia
-  - Rischio idrogeologico
-  - Consumo di suolo
-  - [Affidabilità: Alta] [Aggiornamento: Variabile]
-
-### Geoportali Regionali
-
-- **[Geoportale Lombardia](./administrative/lombardia.md)**
-- **[Geoportale Piemonte](./administrative/piemonte.md)**
-- **[Geoportale Emilia-Romagna](./administrative/emilia-romagna.md)**
-// ...altri geoportali regionali...
-
-### Dataset Open e Collaborativi
-
-- **[OpenStreetMap Italia](./infrastructure/osm.md)**
-- **[Copernicus Services](./environmental/copernicus.md)**
-- **[CORINE Land Cover](./environmental/corine.md)**
-
-Consulta le directory specifiche per i dettagli tecnici di ogni fonte.
-
-## 📊 Valutazione Dataset
-
-Ogni dataset è valutato secondo i seguenti criteri:
-- **Affidabilità**: Bassa | Media | Alta
-- **Completezza**: Parziale | Buona | Completa
-- **Aggiornamento**: Frequenza di aggiornamento
+Ogni risorsa include:
+- **Fonte**: Ente/organizzazione responsabile
+- **URL**: Endpoint di accesso
+- **Servizi**: WMS/WFS/Download
 - **Formato**: Formati disponibili
 - **Licenza**: Tipo di licenza
+- **Aggiornamento**: Frequenza
+- **Affidabilità**: Valutazione qualità
+- **Completezza**: Copertura territoriale
 
-## 📊 Valutazione Standard Dataset
+## 🚀 Come Utilizzare
 
-### Livelli di Affidabilità
-- **Alta**: Fonti ufficiali, dati validati
-- **Media**: Fonti verificabili, aggiornamento regolare
-- **Bassa**: Fonti non verificate o datate
+1. Navigare nelle directory per categoria
+2. Consultare i README specifici
+3. Accedere ai link delle risorse
+4. Verificare requisiti e licenze
 
-### Livelli di Completezza
-- **Completa**: Copertura nazionale totale
-- **Buona**: Copertura > 80%
-- **Parziale**: Copertura < 80%
+## 👥 Come Contribuire
 
-### Frequenze di Aggiornamento
-- **Continuo**: Aggiornamento in tempo reale
-- **Periodico**: Aggiornamento programmato
-- **Statico**: Dato non aggiornato
+1. Fork del repository
+2. Creazione branch (`git checkout -b feature/NuovaRisorsa`)
+3. Commit modifiche (`git commit -m 'Aggiunta nuova risorsa'`)
+4. Push al branch (`git push origin feature/NuovaRisorsa`)
+5. Apertura Pull Request
 
-## 📑 Licenze Dataset
+## 📝 Licenza
 
-### Creative Commons Attribution 4.0 (CC BY 4.0)
-- Agenzia delle Entrate (Cartografia Catastale)
-- TINITALY (Modello Digitale di Elevazione)
-- Alcune regioni italiane
+Questo catalogo è distribuito sotto licenza MIT. I singoli dataset mantengono le proprie licenze originali.
 
-### Open Database License (ODbL)
-- OpenStreetMap Italia
-- NextGIS Data
-- OSM Today
+## 📧 Contatti
 
-### CC BY 3.0
-- ISTAT (alcuni dataset)
-
-### Licenze Multiple/Non Specificate
-- Geoportale Nazionale (MASE)
-- DIVA-GIS
-- IGISMAP
-- Portali regionali
-
-## 🔄 Frequenza Aggiornamenti
-
-### Continuo/Real-time
-- OpenStreetMap
-- Dati sismici INGV
-
-### Semestrale
-- Cartografia Catastale
-- Alcuni geoportali regionali
-
-### Annuale
-- ISTAT (confini amministrativi)
-- Dati ambientali ISPRA
-
-## 🤝 Contributing
-
-Consulta [CONTRIBUTING.md](CONTRIBUTING.md) per le linee guida su come contribuire.
-
-## 📜 License
-
-Questo repository è distribuito sotto licenza MIT. Vedi [LICENSE](LICENSE) per maggiori dettagli.
+Per segnalazioni o contributi, aprire una Issue su GitHub.
