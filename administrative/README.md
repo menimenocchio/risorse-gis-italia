@@ -1,13 +1,14 @@
-# Dati Amministrativi
+# Dati Amministrativi e Geografici
 
-## Fonti Nazionali
-- [ISTAT](national/istat.md)
-- [Agenzia delle Entrate](national/anncsu.md)
-- [Ministero dell'Interno](national/mint.md)
-
-## Geoportali Regionali
-- [Elenco completo](regional/README.md)
-- [Template documentazione](regional/template.md)
+## Struttura
+- [Fonti Nazionali](national/data_sources.md)
+  - ISTAT
+  - Agenzia delle Entrate (ANNCSU)
+  - Ministero dell'Interno
+- [Fonti Regionali](regional/data_sources.md)
+  - Geoportali regionali
+  - Database territoriali
+  - Servizi OGC
 
 ## Standard Metadati
 Ogni dataset deve specificare:
@@ -17,3 +18,7 @@ Ogni dataset deve specificare:
 - Licenza d'uso
 - Formato dati
 - URL download/servizio
+
+Per maggiori dettagli:
+- [Fonti dati nazionali](national/data_sources.md)
+- [Fonti dati regionali](regional/data_sources.md)
