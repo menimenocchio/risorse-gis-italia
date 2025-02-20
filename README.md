@@ -1,32 +1,35 @@
-# 🗺️ GIS Italia Resources
+# GIS Italia - Documentazione Risorse Territoriali
 
-Una raccolta curata di risorse GIS per l'Italia, categorizzate per tipologia, completezza e affidabilità.
-
-## 📑 Struttura Repository
-
+## Struttura Repository
 ```
-gisitalia/
-├── administrative/          # Confini e dati amministrativi
-│   ├── national/           # Dati nazionali (ISTAT, etc.)
-│   └── regional/           # Geoportali regionali
-├── environmental/          # Dati ambientali
-│   ├── climate/           # Dati climatici
-│   ├── geology/           # Dati geologici
-│   ├── nature/            # Parchi e aree protette
-│   └── water/             # Risorse idriche
-├── infrastructure/         # Infrastrutture
-│   ├── buildings/         # Edifici e urbanistica
-│   ├── cadastral/         # Dati catastali
-│   ├── energy/            # Reti energetiche
-│   └── transport/         # Trasporti
-├── demographic/           # Dati demografici
-│   ├── census/            # Dati censimento
-│   └── statistics/        # Statistiche demografiche
-└── topographic/           # Dati topografici
-    ├── dem/               # Modelli di elevazione
-    ├── imagery/           # Ortofoto e immagini
-    └── maps/              # Carte topografiche
+/gisitalia/
+├── administrative/       # Dati amministrativi
+│   ├── national/        # Fonti nazionali (ISTAT, etc)
+│   └── regional/        # Geoportali regionali
+├── demographic/         # Dati demografici
+│   └── census/         # Dati censimenti
+├── environmental/      # Dati ambientali
+└── infrastructure/     # Dati infrastrutture
 ```
+
+## Standard Dataset
+Ogni risorsa deve includere:
+- **Fonte**: Organizzazione/Ente responsabile
+- **Affidabilità**: Bassa/Media/Alta
+- **Aggiornamento**: Frequenza
+- **Licenza**: Tipo licenza
+- **Formato**: Formati disponibili
+- **Sistema**: Sistema di riferimento
+
+## Convenzioni
+- File in formato Markdown
+- Nome file in minuscolo
+- Cartelle per categoria
+- README in ogni cartella
+- Collegamenti verificati
+
+## Contribuire
+Vedere [CONTRIBUTING.md](CONTRIBUTING.md) per le linee guida.
 
 ## 🔍 Indice delle Risorse
 
