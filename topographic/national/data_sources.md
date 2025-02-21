@@ -24,14 +24,14 @@
 - **Affidabilità**: Alta
 - **Completezza**: Completa
 
-## Modelli Digitali del Terreno
+## Modelli Digitali del Terreno - DTM
 
 ### TINITALY/01
-- **URL**: `https://tinitaly.pi.ingv.it/`
+- **URL**: `https://tinitaly.pi.ingv.it/Download_Area1_1.html`
 - **Risoluzione**: 10m
 - **Formato**: ASCII GRID, GeoTIFF
 - **Licenza**: CC BY 4.0
-- **Affidabilità**: Alta
+- **Risoluzione**: 10m
 - **Completezza**: Completa
 
 ### DTM Nazionale

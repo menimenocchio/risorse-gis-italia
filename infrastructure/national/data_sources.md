@@ -16,6 +16,7 @@
 
 ### Microsoft ML Building Footprints
 - **URL**: `https://minedbuildings.z5.web.core.windows.net/global-buildings/dataset-links.csv`
+- **Licenza**: Open Data Commons Open Database License (ODbL).
 - **Aggiornamento**: Mensile (ma dataset globale)
 - **Formati**: csv
 
@@ -40,53 +41,30 @@
   - **Formato**: RINEX
   - **Aggiornamento**: Real-time
 
-#### Modelli del Terreno
-- **DTM Nazionale**:
-  - **Risoluzione**: 10m
-  - **Formato**: ASCII GRID
-  - **Sistema**: ETRF2000
 
 ## Cartografia Catastale
 
 ### Agenzia delle Entrate
-- **WMS**: `https://wms.cartografia.agenziaentrate.gov.it/inspire/wms/ows01.php`
-- **Download**: `https://www.gisinfrastrutture.it/2025/02/la-cartografia-catastale-italiana`
+- **WMS**: `https://wms.cartografia.agenziaentrate.gov.it/inspire/wms/ows01.php?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities`
+- **WFS**: `https://wfs.cartografia.agenziaentrate.gov.it/inspire/wfs/owfs01.php?SERVICE=WFS&REQUEST=GetCapabilities&VERSION=2.0.0`
+- **Download**: `https://wfs.cartografia.agenziaentrate.gov.it/inspire/wfs/GetDataset.php?dataset=ITALIA.zip`
 - **Licenza**: CC BY 4.0
-- **Formato**: Shapefile, WMS, WFS
+- **Formato**: Shapefile, WMS, WFS, GML
+- **Aggiornamento**: Giornaliero per WFS e WMS, semestrale per il link di download diretto
+- **Sistema**: EPSG:6706
 
-### Dataset Disponibili
-#### Particelle Catastali
-- **Aggiornamento**: Mensile
-- **Sistema**: ETRF2000
-- **Scala**: 1:2.000
-- **Formato**: SHP, DXF
-
-#### Fabbricati
-- **Aggiornamento**: Mensile
-- **Formato**: SHP, DXF
-- **Attributi**: Foglio, Particella, Subalterno
-
-#### Servizi OGC
-- **WMS**: Visualizzazione
-- **WFS**: Download features
-- **Sistema**: EPSG:4258/ETRS89
-
-### API e Servizi Web
-- **WMS**: `https://wms.cartografia.agenziaentrate.gov.it/inspire/wms/ows01.php`
-- **WFS**: `https://wfs.cartografia.agenziaentrate.gov.it/inspire/wfs`
-- **Autenticazione**: Basic HTTP
-- **Formato risposte**: GML, JSON, SHP
 
 ## Trasporti e Viabilità
 
-### RFI - Rete Ferroviaria Italiana
-- **WMS**: `https://webgis.rfi.it/arcgis/services/`
+### Mase - Rete Ferroviaria Italiana
+- **WMS**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/WMS_v1.3/Vettoriali/Rete_ferroviaria.map&service=wms&request=getCapabilities&version=1.3.0/`
 - **Dataset**: 
   - Rete ferroviaria nazionale
   - Stazioni
   - Passaggi a livello
-- **Formato**: Shapefile, KML
+- **Formato**: Shapefile
 - **Aggiornamento**: Trimestrale
+
 
 ### ANAS - Strade Statali
 - **WFS**: `http://wasservice.anas.it/services/`
@@ -145,3 +123,26 @@
 - **DTM**: 20m, 75m (ASCII GRID, GeoTIFF)
 - **Ortofoto**: 1988-2023 (ECW, JPG)
 - **Sistema di riferimento**: EPSG:32632/33
+
+### Limiti Amministrativi
+- **2020**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/LimitiAmministrativi_2020.map`
+- **2011**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/LimitiAmministrativi_2011.map`
+
+### Edifici e Strutture
+- **Edificato Capoluoghi**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/Edifici.map`
+- **Numeri Civici**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/Numeri_Civici.map`
+- **Scuole**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/Scuole_statali_paritarie.map`
+
+### SAR e Monitoraggio
+- **COSMO-SkyMed**:
+  - **Ascending**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/QU_COSMOSKYMED_Ascending.map`
+  - **Descending**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/QU_COSMOSKYMED_Descending.map`
+- **ENVISAT**:
+  - **Ascending**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/QU_ENVISAT_Ascending.map`
+  - **Descending**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/QU_ENVISAT_Descending.map`
+- **ERS**:
+  - **Ascending**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/QU_ERS_Ascending.map`
+  - **Descending**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/QU_ERS_Descending.map`
+
+### LiDAR e DTM
+- **Quadro Unione LiDAR**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/QU_Lidar.map`

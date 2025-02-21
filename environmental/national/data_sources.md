@@ -160,3 +160,49 @@
   - Temperature acqua
   - Moto ondoso
 - **Aggiornamento**: Real-time
+
+### Idrologia e Bacini
+- **Reticolo Idrografico**
+  - **WFS**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/Aste_fluviali.map`
+- **Bacini Idrografici**
+  - **WFS**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/Bacini_idrografici.map`
+- **Specchi d'Acqua**
+  - **WFS**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/Specchi_Acqua.map`
+
+### Rischio Idrogeologico
+- **Piano Assetto Idrogeologico (PAI)**
+  - **Pericolosità**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/PAI_pericolosita.map`
+  - **Rischio**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/PAI_rischio.map`
+- **Alluvioni PGRA 2021**:
+  - **Estensione**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/Alluvioni_Estensione.map`
+  - **Elementi a Rischio**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/Alluvioni_Elementi_a_Rischio.map`
+  - **Caratteristiche Idrauliche**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/Alluvioni_Caratteristiche_Idrauliche.map`
+  - **Classi di Rischio**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/Alluvioni_Classi_di_Rischio.map`
+
+### Uso del Suolo
+#### Corine Land Cover
+- **1990**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/Corine_Land_Cover1990.map`
+- **2000**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/Corine_Land_Cover2000.map`
+- **2006**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/Corine_Land_Cover2006.map`
+- **2012**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/Corine_Land_Cover2012.map`
+
+#### Corine Land Cover IV Livello
+- **2000**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/Corine_Land_Cover2000_IVliv.map`
+- **2006**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/Corine_Land_Cover2006_IVliv.map`
+- **2012**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/Corine_Land_Cover2012_IVliv.map`
+
+### Aree Protette
+- **Rete Natura 2000**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/SIC_ZSC_ZPS.map`
+- **EUAP**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/EUAP.map`
+- **Zone Ramsar**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/RAMSAR.map`
+- **IBA**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/IBA.map`
+- **ZPE**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/ZPE.map`
+- **Santuario Pelagos**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/Santuario_Pelagos.map`
+
+### Geologia e Rischio Sismico
+- **Carta Geologica**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/Carta_geologica.map`
+- **Carta Geolitologica**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/Carta_geolitologica.map`
+- **Zone Sismogenetiche**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/Zone_sismogenetiche_ZS9.map`
+- **Pericolosità Sismica**:
+  - **0.02°**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/Pericolosita_sismica_002.map`
+  - **0.05°**: `http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/Pericolosita_sismica_005.map`
