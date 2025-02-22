@@ -20,6 +20,12 @@
 - **Aggiornamento**: Mensile (ma dataset globale)
 - **Formati**: csv
 
+### OpenStreetMap
+- **URL**: `https://s3.dualstack.us-east-1.amazonaws.com/production-raw-data-api/ISO3/ITA/buildings/polygons/hotosm_ita_buildings_polygons_gpkg.zip`
+- **Licenza**: ODbL (Open Database License)
+- **Aggiornamento**: Settimanale
+- **Formati**: gpkg
+
 ## Istituto Geografico Militare (IGM)
 
 ### Prodotti Cartografici
